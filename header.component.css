@@ -1,0 +1,21 @@
+
+.container
+{
+    height: 40px;
+    width: 100%;
+    background-color: teal;
+   
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+li a{
+    float: left;
+    margin-left: 10%;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}

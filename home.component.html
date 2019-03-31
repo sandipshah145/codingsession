@@ -1,0 +1,44 @@
+
+<br/>
+<label style="margin-left:40%;color: olivedrab;">Choose any Button</label>
+<br/>
+<button class="btn btn-primary" (click)="kgToGram()" style="margin-left:33%;">Mass  Converter</button>
+<button class="btn btn-primary" (click)="kmToMeter()">Length Converter</button>
+<div *ngIf="kgtogram">
+    <fieldset style="width:350px;margin-left:30%;border:3px solid teal;">
+   <legend><h1>Mass  Converter</h1></legend> 
+    <label>KiloGram:</label>
+    <input type="text" (input)="onKgToGram($event)" value= '{{ anskd }}' >
+    <br/>
+    <label>Gram:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" (input)="ongrntother($event)" value= '{{ anskgtogram }}' >  <br/>
+    <label>Pound:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" (input)="onpuntother($event)" value= '{{ anspnd }}' >  <br/>
+    <label>Ounce:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" (input)="ontoounce($event)" value= '{{ ansounce }}' >
+</fieldset>
+</div>
+<div *ngIf="kmtometer">
+
+        <fieldset style="width:350px;margin-left:30%;border:3px solid teal;"> 
+                <legend>  <h1>Length Converter</h1></legend>
+    <label>Kilometer</label>
+    &nbsp;&nbsp;<input type="text" (input)="onKmToMeter($event)"  value= '{{ ansmtk  }}' ><br/>
+    <label>Meter</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" (input)="onmtother($event)" value= '{{ anskmtometer }}'  ><br/>
+    <label>Centemeter</label>
+    <input type="text" (input)="oncntother($event)" value= '{{ anscenti  }}' >
+    <br/><label>MiliMeter</label>&nbsp;
+    <input type="text" (input)="onmilitother($event)" value= '{{  ansmili }}' >
+    <br/>
+    <label>Inch</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" (input)="oninchtother($event)" value= '{{ ansinch }}' >
+    <br/>
+    <label>Foot</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" (input)="onfoottother($event)" value= '{{ ansft }}' >
+    <br/>
+    <label>Miles</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+    <input type="text"(input)="onmilestother($event)"  value= '{{ ansmile }}' >
+    </fieldset>
+</div>
+
